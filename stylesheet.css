@@ -1,14 +1,87 @@
+:root{
+    /* --color-de-letra: #0F81E0; */
+    --color-de-letra:white;
+    --color-de-header: yellow;
+    --color-de-links: lightblue;
+    --color-de-links-active: lightsalmon;
+    --color-de-links-hover:red;
+    --color-de-links-visited:grey;
+    /* color: ; */
+}
+
+.fijo{
+    background-color: hsl(60, 75%, 50%);
+    color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.fijo p{
+    position: relative;
+    margin-top: 0px auto;
+    margin-bottom:10px;
+    color:black;
+    font-weight: bolder;
+    font-size: smaller;
+    text-align: center;
+}
+
+.button, .button:active, .button:visited{
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 1px solid black ;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: darkslategrey;
+    border: 1px solid darkslategrey;
+    color:white;
+    text-decoration: none;
+}
+
+
+/* 
+.button:hover{
+    
+
+} */
+
 html, body{
-    margin-left: 3%;
-    margin-right: 3%;
+    /* width: 100%; */
+    text-align: center;
     font-family: -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
+body{
+    background-image: url("/home/sr_pache/Imágenes/vintage-wallpaper.png");
+
+    /* background-image: url("/home/sr_pache/Imágenes/double-bubble.png"); */
+    /* background-size: 50%; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+}
+
+main{
+    width: 85%;
+    max-width: 900px;
+    text-align: left;
+    margin: 80px auto;
+}
+
+
 p{
-    color: #171a21;
+    /* color: #171a21; */
+    color:var(--color-de-letra);
     text-indent: 15px;
     line-height: 25px;
     margin-bottom: -14px;
@@ -25,11 +98,12 @@ ul,ol{
 
 li{
     text-align:justify;
+    color:var(--color-de-letra);
 }
 
 h1 {
-    background-color: white;
-    box-shadow: -5px 10px #ffdaad;
+    background-color: #d87701;
+    box-shadow: -5px 10px rgba(255, 218, 173,0.25);
     text-align: center;
     
     border-bottom:4px solid #647AA3;
@@ -37,23 +111,23 @@ h1 {
     border-right: 2px solid #647AA3;
     border-top: 2px solid #647aa3;
     
-    color: #d87701; 
+    color: white; 
     margin-bottom: -12px;
     padding: 0.3em;
 }
 
 h2{
     margin-top: 35px;
-    color:#008080;
+    color:white;
     text-indent: 10px;
     /*text-shadow: -2px 2px lightgrey;*/
-
+    background-color: #008080;
     border-left: 6px solid #647AA3;
     border-right: 2px solid #647AA3;
     border-top: 2px solid #647AA3;
     
     border-bottom: 6px solid #647AA3;
-    box-shadow: -5px 10px #90d5d1;
+    box-shadow: -5px 10px rgba(144, 213, 209,0.25);
     text-align:center;
     padding: 0.3em;
     
@@ -61,27 +135,39 @@ h2{
 
 h3{
     /*color:#647aa3;*/
-    color: #d87701;
+    color: white;
     margin-left: 2%;
     text-indent: 10px;
     /*text-shadow: -2px 2px #ffdaad;*/
-    
+    background-color: #d87701;
     border-left: 3px solid #647aa3;
     border-right: 1px solid #647aa3;
     border-top: 1px solid #647aa3;
-    
-    border-bottom: 3px solid #647aa3;
+
     /*border-shadow: -2px 2px #ffdaad;*/
-    box-shadow: -5px 10px #ffdaad;
+    box-shadow: -5px 10px rgba(255, 218, 173,0.25);
     margin-top:28px;
     padding: 0.3em;
 }
 
 
 a{
-    color: #647AA3;
+    /* color: #647AA3; */
+    color:var(--color-de-links);
     text-decoration: underline currentColor;
     text-align:left;
+}
+
+a:active{
+    color: var(--color-de-links-active);
+}
+
+a:hover{
+    color: var(--color-de-links-hover);
+}
+
+a:visited{
+    color:var(--color-de-links-visited);
 }
 
 .three{
@@ -118,7 +204,7 @@ blockquote{
     00458b
     width: 90%;
     */
-    
+    color: var(--color-de-header);
     font-weight: lighter;
     font-size: smaller;
     
@@ -126,17 +212,21 @@ blockquote{
 
 
 .center{
-				text-align: center;
-				border-top: 0.5px solid black;
-				padding-top: 15px;
+    text-align: center;
+    /* border-top: 0.5px solid black; */
+    /* padding-top: 15px; */
 }
 
 .linea{
-				margin-top: 25px;
+    margin-top: 25px;
 }
 
 .fin{
-				font-weight: lighter;
+    font-weight: lighter;
     font-size: smaller;
     text-align: center;
+}
+
+footer{
+    color:var(--color-de-letra);
 }
