@@ -93,12 +93,23 @@ html, body{
     /* background-color: #ffffff; */
 }
 
-body{
-    background-color: rgba(14, 14, 77, 0.95);
+
+.background{
+    animation-name: circle-in-hesitate;
+    animation-duration: 2s;
+    /* background-color: rgba(14, 14, 77, 0.95); */
     /* background-size: 50%; */
     /* background-repeat: no-repeat; */
     /* background-attachment: fixed; */
     /* background-size: cover; */
+    position:fixed;
+    z-index: -1;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(14, 14, 77, 0.95);
+
 }
 
 main{
@@ -127,7 +138,7 @@ ul,ol{
 }
 
 li{
-    text-align:justify;
+    text-align:left;
     color:var(--color-de-letra);
 }
 
@@ -261,3 +272,19 @@ blockquote{
 footer{
     color:var(--color-de-letra);
 }
+
+@keyframes circle-in-hesitate {
+    0% {
+      clip-path: circle(0%);
+    }
+    40% {
+      clip-path: circle(40%);
+    }
+    100% {
+      clip-path: circle(125%);
+    }
+  }
+  
+  [transition-style="in:circle:hesitate"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+  }
