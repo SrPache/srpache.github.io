@@ -38,7 +38,7 @@ body{
 @media only screen and (max-width:800px) {
     /* For tablets: */
     nav li{
-      width: 50%;
+      /* width: 50%; */
       padding: 0;
       line-height: 0.1rem;
     }
@@ -53,22 +53,22 @@ body{
 @media only screen and (max-width:500px) {
     /* For mobile phones: */
     #menu {
-        display: none;
+        /* display: none;
         visibility: hidden;
-        clear: both;
+        clear: both; */
         float: left;
         margin: 10px auto 5px 20px;
-        width: 28%;
-        display: none;
+        /* width: 28%; */
+        /* display: none; */
     }
     nav li{
-        width: 100%;
+        /* width: 100%; */
         line-height: -0.2rem;
     }
-    #fix{
+    /* #fix{
         top:0;
         height: 7vh;
-    }
+    } */
 }
 
 header{
@@ -95,6 +95,10 @@ header{
 
 nav ul{
     padding:0;
+}
+
+nav li{
+    display: inline-block;
 }
 
 nav ul li{
