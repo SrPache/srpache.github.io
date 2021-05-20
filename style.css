@@ -199,6 +199,35 @@ p>a{
     color:rgb(162, 210, 250)
 }
 
+
+button{  
+    background: linear-gradient(rgba(230, 230, 230,0.2),rgba(43, 88, 224,0.05));
+    border-radius: .3rem;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid rgb(112, 142, 230);
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.02);
+    color:rgb(43, 88, 224);
+}
+
+button a{
+    text-decoration: none;
+    color:rgb(43, 88, 224);
+    color:inherit;
+}
+
+button:hover{  
+    box-shadow: 0 0 8px 8px rgba(43,88,224,0.05);
+    background:rgb(43, 88, 224);
+    border: 1px solid rgb(112, 142, 230);
+    color:#ddd;
+    cursor:pointer
+}
+
+p{
+    margin: 12px 0 10px;
+}
+
 @media screen and (max-width:768px) {
     body{
         grid-row-gap:0px;
