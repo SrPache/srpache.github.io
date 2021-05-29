@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <main id="contacto">
+        <h1>Hola visitante :)</h1>
+        <p>Tu mensaje y tu opinión es muy importante para mí. Para contactarme llená el formulario debajo y me pondré en contacto a la brevedad. Te leo!</p>
+        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mjvjwwjw" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Nombre completo</label>
+              <input type="text" name="name" id="full-name" placeholder="Su nombre y apellido" required="">
+              <label for="email-address">Correo electrónico</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="sucorreo@electronico.com" required="">
+              <label for="telephone">Número de celular (Opcional)</label>
+              <input type="telephone" name="telephone" id="telephone" placeholder="2914555666">
+              <label for="complaint">Mensaje</label>
+              <textarea rows="6" name="complaint" id="complaint" placeholder="Escribí acá tu mensaje..." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+            </fieldset>
+            <input type="submit" value="Enviar mensaje">
+        </form>
+        <a href="index.html">Volver a la página principal</a>
+    </main>    
+</body>
+</html>
