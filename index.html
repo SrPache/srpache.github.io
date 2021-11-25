@@ -5,133 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sr_Pache</title>
-    <link rel="shortcut icon" href="img/profile.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;400;500;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/profile.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/335b0394ab.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <header id="header">
-        <div id="header-max">
-            <a href="#" id="header-logo">
-                <div id="logo-image">
-                    <img src="img/profile.png" alt="" id="logo">
-                </div>
-                <div id="logo-title">
-                    <p id="title">Sr_Pache</p>
-                </div>
+    <div class="container-fluid" id="header-container">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="header">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="/img/profile.png" alt="Foto de perfil" id="logo">
+                <span class="fs-4">Sr_Pache</span>
             </a>
-            <input type="checkbox" name="menu" id="menu">
-            <label for="menu" id="header-bars">
-                <i class="fas fa-bars i-button"></i>
-            </label>
-            <nav id="header-nav">
-                <ul id="nav">
-                    <li><a href="#welcome-section" class="nav-link active">Sobre mí</a></li>
-                    <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                    <li><a href="#social-media" class="nav-link">Mis redes</a></li>
-                </ul>
-            </nav>
-            <a href="mailto:sr_pache@protonmail.com" id="header-contact">
-                <i class="fas fa-envelope i-button"></i>
-            </a>
-            
+        
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#about-me" class="nav-link active" aria-current="page">Sobre mí</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Mis proyectos</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="#mail" class="nav-link"><i class="fas fa-envelope i-button"></i></a></li>
+            </ul>
+            </header>
         </div>
-    </header>    
-    <main id="main">
+    </div>
 
-        <!-- SECCIÓN DE BIENVENIDA -->
-
-        <section id="welcome-section" class="backgrounds">
-            <div class="max">
-                <img src="img/img_00_reduce.jpg" alt="" id="first-image">
-                <h1>Mi nombre es <span class="special-bold">Franco Pacheco</span> y soy estudiante de Desarrollo Web.</h1>
-                <p>Muchas gracias por la visita y espero que me cuentes qué fue lo que más te gustó.</p>
-            </div>
-        </section>
-
-        <!-- SECCIÓN DE PROYECTOS -->
-
-        <section id="projects" class="backgrounds">
-            <div class="project-max">
-                <h2 class="section-header max">Algunos de mis proyectos</h2>
-                <div class="section-grid">
-                    <a href="https://srpache.github.io/tributoamilankundera/" class="project-tile" target="_blank">
-                        <img src="img/projects/project-1_reduce.jpg" alt="">
-                        <p>
-                            <span class="code">&lt;</span>
-                            Tributo a Milan Kundera
-                            <span class="code">&#47;&gt;</span>
-                        </p>
-                    </a>
-                    <a href="https://srpache.github.io/formulariodecontacto/" class="project-tile" target="_blank">
-                        <img src="img/projects/project-2_reduce.jpg" alt="">
-                        <p>
-                            <span class="code">&lt;</span>
-                            Formulario de inscripción
-                            <span class="code">&#47;&gt;</span>
-                        </p>
-                    </a>
-                    <a href="https://srpache.github.io/productlandingpage/" class="project-tile" target="_blank">
-                        <img src="img/projects/project-3_reduce.jpg" alt="">
-                        <p>
-                            <span class="code">&lt;</span>
-                            Página de productos
-                            <span class="code">&#47;&gt;</span>
-                        </p>
-                    </a>
-                    <a href="https://srpache.github.io/cursos/" class="project-tile" target="_blank">
-                        <img src="img/projects/project-4_reduce.jpg" alt="">
-                        <p>
-                            <span class="code">&lt;</span>
-                            Cursos gratuitos
-                            <span class="code">&#47;&gt;</span>
-                        </p>
-                    </a>
-                    <a href="https://srpache.github.io/technicaldocumentationpage/" class="project-tile" target="_blank">
-                        <img src="img/projects/project-5_reduce.jpg" alt="">
-                        <p>
-                            <span class="code">&lt;</span>
-                            Documentación técnica
-                            <span class="code">&#47;&gt;</span>
-                        </p>
-                    </a>
-                    <a href="https://srpache.github.io/amarantoverduras/" class="project-tile" target="_blank">
-                        <img src="img/projects/project-6_reduce.jpg" alt="">
-                        <p>
-                            <span class="code">&lt;</span>
-                            Tienda de alimentos
-                            <span class="code">&#47;&gt;</span>
-                        </p></a>
-                </div>
-            </div>
-            
-            
-        </section>
-
-
-        <section id="social-media" class="backgrounds">
-            <div class="project-max">
-                <h2 class="section-header">¿Hacemos un proyecto?</h2>
-                <div class="section-media">
-                    <a href="https://www.facebook.com/profile.php?id=100068667195952" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
-                    <a href="https://www.twitter.com/sr_pache" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-                    <a href="https://www.linkedin.com/in/francoivanpacheco/" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-                    <a href="https://www.instagram.com/sr_pache/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-                    <a href="mailto:sr_pache@protonmail.com" target="_blank"><i class="fas fa-envelope"></i>Email</a>
-                    <a href="https://github.com/SrPache" target="_blank"><i class="fab fa-github"></i>Github</a>
-                    <a href="https://www.freecodecamp.org/sr_pache" target="_blank"><i class="fab fa-free-code-camp"></i>FreeCodeCamp</a>
-                </div>
-            </div>
-        </section>
-
+    <main>
+        <div class="container centrado" id="about-me">
+            <img src="/img/main.jpg" alt="Imagen principal" id="main-img">
+            <p class="lead fw-normal">Mi nombre es <span class="special">Franco Pacheco</span> y soy <span class="special">estudiante</span> de Desarrollo Web.
+                Muchas gracias por la visita y espero que me cuentes qué fue lo que más te gustó.</p>
+            <a class="btn btn-outline-secondary" href="html/encuesta.html">Breve encuesta</a>
+        </div>
     </main>
-    <footer id="footer">
-        <p>Créditos de las imágenes utilizadas: <a href="https://www.freepik.com/vectors/man">Man vector created by upklyak - www.freepik.com</a></p>
-        <p>Sitio web hecho con <span>&hearts;</span> por <a href="https://www.twitter.com/Sr_Pache" target="_blank">Franco</a></p>
-    </footer>
+    <main>
+        <div class="container-fluid" id="projects">
+            <h2>Mis proyectos</h2>
+            <div class="container centrado">
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card">
+                            <a href="https://srpache.github.io/tributoamilankundera/" target="_blank">
+                                <img src="/img/projects/project-1_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
+                                <div class="card-body">
+                                    <h5 class="card-title">Página tributo</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <a href="https://srpache.github.io/formulariodecontacto/" target="_blank">
+                                <img src="/img/projects/project-2_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
+                                <div class="card-body">
+                                    <h5 class="card-title">Formulario web</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <a href="https://srpache.github.io/productlandingpage/" target="_blank">
+                                <img src="/img/projects/project-3_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
+                                <div class="card-body">
+                                    <h5 class="card-title">Página de productos</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <a href="https://srpache.github.io/cursos/" target="_blank">
+                                <img src="/img/projects/project-4_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cursos gratis</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <a href="https://srpache.github.io/technicaldocumentationpage/" target="_blank">
+                                <img src="/img/projects/project-5_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
+                                <div class="card-body">
+                                    <h5 class="card-title">Documentación técnica</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <a href="https://srpache.github.io/amarantoverduras/" target="_blank">
+                                <img src="/img/projects/project-6_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tienda web</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container-fluid" id="contact">
+        <h2>¿Hacemos un proyecto?</h2>
+        <div class="section-media">
+            <a href="https://www.facebook.com/profile.php?id=100068667195952" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a href="https://www.twitter.com/sr_pache" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+            <a href="https://www.linkedin.com/in/francoivanpacheco/" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+            <a href="https://www.instagram.com/sr_pache/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="mailto:sr_pache@protonmail.com" target="_blank"><i class="fas fa-envelope"></i>Email</a>
+            <a href="https://github.com/SrPache" target="_blank"><i class="fab fa-github"></i>Github</a>
+            <a href="https://www.freecodecamp.org/sr_pache" target="_blank"><i class="fab fa-free-code-camp"></i>FreeCodeCamp</a>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">© 2021 Todos los derechos reservados</p>
+            
+                <!-- <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                </a> -->
+            
+                <ul class="nav col-md-4 justify-content-end">
+                  
+                    <li class="nav-item"><a href="#about-me" class="nav-link px-2 text-muted">Sobre mí</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link px-2 text-muted">Mis proyectos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contacto</a></li>
+                    <!-- <li class="nav-item"><a href="mailto:sr_pache@protonmail.com" class="nav-link px-2 text-muted"><i class="fas fa-envelope i-button"></i></a></li> -->
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
