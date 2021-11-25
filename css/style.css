@@ -156,6 +156,15 @@ h2{
     margin-bottom: .5rem !important;
 }
 
+#location{
+    padding: 2.5rem 1rem 0;
+}
+
+iframe{
+    max-width: 100%;
+    max-height: 90%;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width:480px) {
@@ -183,6 +192,7 @@ h2{
         flex-direction: column !important;
     }
     
+    iframe{margin-top:1rem}
 }
 
 /* @media (min-width:1200px) {
