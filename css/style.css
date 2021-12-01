@@ -145,7 +145,7 @@ h2{
 }
 
 .section-media a i{
-    font-size: 1.2rem !important;
+    font-size: 2rem !important;
 }
 
 .container>footer.py-3{
@@ -170,6 +170,10 @@ iframe{
 @media (max-width:480px) {
     *{
         font-size: 1rem !important;
+    }
+    
+    .section-media a i{
+        font-size: 1.2rem !important;
     }
 
     .nav.nav-pills{
