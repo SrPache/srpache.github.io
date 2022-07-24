@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.redes {
+  min-width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #043a77;
+}
+
+.figure {
+  width: 100%;
+}

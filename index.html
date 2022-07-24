@@ -1,146 +1,453 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Sr_Pache</title>
-    <link rel="shortcut icon" href="/img/profile.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/55c8f6dfe2.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="container-fluid" id="header-container">
+    <link rel="shortcut icon" href="public/media/img/favicon.ico" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/55c8f6dfe2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header
+      class="container-fluid m-0 p-0 position-sticky sticky-top shadow-sm rounded-bottom"
+    >
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light border-bottom border-light rounded-bottom"
+      >
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="header">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img src="/img/profile.png" alt="Foto de perfil" id="logo">
-                <span class="fs-4">Sr_Pache</span>
-            </a>
-        
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#about-me" class="nav-link active" aria-current="page">Sobre mí</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Mis proyectos</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="mailto:sr_pache@protonmail.com" class="nav-link"><i class="fas fa-envelope i-button"></i></a></li>
+          <a
+            class="d-flex gap-2 align-content-center navbar-brand align-content-center"
+            href="#"
+          >
+            <img
+              src="public/media/img/profile.png"
+              width="45px"
+              alt="Fotografía redonda, con fondo transparente, en donde el autor de la página (Franco Pacheco) mirando a su derecha con lentes oscuros y una remera roja."
+              class="img-fluid rounded-circle"
+              title="Foto de perfil"
+            />
+            <h1 class="d-flex m-0 h5 align-items-center text-uppercase">
+              Sr_Pache
+            </h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="bi bi-list" style="font-size: 1.5rem"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto sm-2 mb-md-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about-me"
+                  >Sobre mí</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tecnologias">Tecnologías</a>
+              </li>
             </ul>
-            </header>
+          </div>
         </div>
-    </div>
+      </nav>
+    </header>
 
-    <section>
-        <div class="container centrado" id="about-me">
-            <img src="/img/main.jpg" alt="Imagen principal" id="main-img">
-            <p class="lead fw-normal">Mi nombre es <span class="special">Franco Pacheco</span> y soy <span class="special">estudiante</span> de Desarrollo Web.
-                Muchas gracias por la visita y espero que me cuentes qué fue lo que más te gustó.</p>
-            <a class="btn btn-outline-secondary" href="html/encuesta.html">Breve encuesta</a>
-        </div>
-    </section>
-    <main>
-        <div class="container-fluid" id="projects">
-            <h2>Mis proyectos</h2>
-            <div class="container centrado">
-                <div class="row row-cols-1 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://srpache.github.io/tributoamilankundera/" target="_blank">
-                                <img src="/img/projects/project-1_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
-                                <div class="card-body">
-                                    <h5 class="card-title">Página tributo</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://srpache.github.io/formulariodecontacto/" target="_blank">
-                                <img src="/img/projects/project-2_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
-                                <div class="card-body">
-                                    <h5 class="card-title">Formulario web</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://srpache.github.io/productlandingpage/" target="_blank">
-                                <img src="/img/projects/project-3_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
-                                <div class="card-body">
-                                    <h5 class="card-title">Página de productos</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://srpache.github.io/cursos/" target="_blank">
-                                <img src="/img/projects/project-4_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cursos gratis</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://srpache.github.io/technicaldocumentationpage/" target="_blank">
-                                <img src="/img/projects/project-5_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
-                                <div class="card-body">
-                                    <h5 class="card-title">Documentación técnica</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://srpache.github.io/amarantoverduras/" target="_blank">
-                                <img src="/img/projects/project-6_reduce.jpg" class="card-img-top" alt="Captura de pantalla de la web">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tienda web</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
+    <main
+      id="about-me"
+      class="container-fluid d-flex align-items-center py-4"
+      style="min-height: 80vh"
+    >
+      <div
+        class="container-md py-2 d-flex flex-column align-items-center text-center"
+      >
+        <p class="fs-3 my-1 fw-lighter">
+          Bienvenid<span class="text-decoration-underline">x</span>!
+        </p>
+        <img
+          src="public/media/img/main.jpg"
+          width="400px"
+          class="my-1 rounded-circle img-fluid mx-auto"
+          alt="Caricatura en tonos violetas y celestes de una persona que está señalando pantallas y botones que flotan por delante de él"
+          title="Caricatura principal sobre tecnología"
+        />
+        <p class="fs-5 fw-lighter-sm my-4 col-sm-9 col-lg-7 col-xl-6">
+          Mi nombre es
+          <mark
+            class="px-2 mx-1 text-light fw-bolder"
+            style="background-color: #9eeaf9; background-color: #043a77"
+            >Franco Pacheco</mark
+          >
+          y soy <span class="fw-bold">estudiante</span> de
+          <span class="fw-bold">Desarrollo Web</span>.<br />
+          Muchas gracias por la visita!
+        </p>
+      </div>
     </main>
 
-    <section class="container-fluid" id="contact">
-        <h2>¿Hacemos un proyecto?</h2>
-        <div class="section-media">
-            <a href="https://www.facebook.com/profile.php?id=100068667195952" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
-            <a href="https://www.twitter.com/sr_pache" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-            <a href="https://www.linkedin.com/in/francoivanpacheco/" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-            <a href="https://www.instagram.com/sr_pache/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-            <a href="mailto:sr_pache@protonmail.com" target="_blank"><i class="fas fa-envelope"></i>Email</a>
-            <a href="https://github.com/SrPache" target="_blank"><i class="fab fa-github"></i>Github</a>
-            <a href="https://www.freecodecamp.org/sr_pache" target="_blank"><i class="fab fa-free-code-camp"></i>FreeCodeCamp</a>
+    <section
+      id="projects"
+      class="container-fluid py-5"
+      style="min-height: 70vh; background-color: #043a77"
+    >
+      <h2 class="text-light text-center my-4">Mis proyectos</h2>
+      <div class="container my-5">
+        <div class="row g-3 justify-content-center">
+          <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8">
+            <a
+              href="https://tiendapotrerodigital.000webhostapp.com/"
+              class="card text-decoration-none text-reset"
+              target="_blank"
+            >
+              <img
+                src="public/media/img/portfolio/01-tienda.jpg"
+                class="card-img-top img-fluid w-300 h-200"
+                width="300px"
+                height="200px"
+                alt="Vista previa de la página a visitar"
+                title="Vista previa de la página a visitar"
+              />
+              <div class="card-body p-1">
+                <h5 class="card-title m-0 text-center">Tienda de ropa</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8">
+            <a
+              href="https://srpache.github.io/ahorcado-v2/"
+              class="card text-decoration-none text-reset"
+              target="_blank"
+            >
+              <img
+                src="public/media/img/portfolio/02-ahorcado.jpg"
+                class="card-img-top"
+                width="300px"
+                height="200px"
+                alt="Vista previa de la página a visitar"
+                title="Vista previa de la página a visitar"
+              />
+              <div class="card-body p-1">
+                <h5 class="card-title m-0 text-center">Juego del ahorcado</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8">
+            <a
+              href="https://srpache.github.io/loteria/"
+              class="card text-decoration-none text-reset"
+              target="_blank"
+            >
+              <img
+                src="public/media/img/portfolio/03-loteria.jpg"
+                class="card-img-top"
+                width="300px"
+                height="200px"
+                alt="Vista previa de la página a visitar"
+                title="Vista previa de la página a visitar"
+              />
+              <div class="card-body p-1">
+                <h5 class="card-title m-0 text-center">Loteria</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8">
+            <a
+              href="https://srpache.github.io/encriptador_de_texto/"
+              class="card text-decoration-none text-reset"
+              target="_blank"
+            >
+              <img
+                src="public/media/img/portfolio/04-encriptador.jpg"
+                class="card-img-top"
+                width="300px"
+                height="200px"
+                alt="Vista previa de la página a visitar"
+                title="Vista previa de la página a visitar"
+              />
+              <div class="card-body p-1">
+                <h5 class="card-title m-0 text-center">Encriptador de texto</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8">
+            <a
+              href="https://srpache.github.io/tributoamilankundera/"
+              class="card text-decoration-none text-reset"
+              target="_blank"
+            >
+              <img
+                src="public/media/img/portfolio/05-pagina-tributo.jpg"
+                class="card-img-top"
+                width="300px"
+                height="200px"
+                alt="Vista previa de la página a visitar"
+                title="Vista previa de la página a visitar"
+              />
+              <div class="card-body p-1">
+                <h5 class="card-title m-0 text-center">
+                  Tributo a Milan Kundera
+                </h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8">
+            <a
+              href="https://srpache.github.io/formulariodecontacto/"
+              class="card text-decoration-none text-reset"
+              target="_blank"
+            >
+              <img
+                src="public/media/img/portfolio/06-formulario.jpg"
+                class="card-img-top"
+                width="300px"
+                height="200px"
+                alt="Vista previa de la página a visitar"
+                title="Vista previa de la página a visitar"
+              />
+              <div class="card-body p-1">
+                <h5 class="card-title m-0 text-center">Formulario</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8">
+            <a
+              href="https://srpache.github.io/productlandingpage/"
+              class="card text-decoration-none text-reset"
+              target="_blank"
+            >
+              <img
+                src="public/media/img/portfolio/07-landing.jpg"
+                class="card-img-top"
+                width="300px"
+                height="200px"
+                alt="Vista previa de la página a visitar"
+                title="Vista previa de la página a visitar"
+              />
+              <div class="card-body p-1">
+                <h5 class="card-title m-0 text-center">Landing page</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8">
+            <a
+              href="https://srpache.github.io/technicaldocumentationpage/"
+              class="card text-decoration-none text-reset"
+              target="_blank"
+            >
+              <img
+                src="public/media/img/portfolio/08-documentation.jpg"
+                class="card-img-top"
+                width="300px"
+                height="200px"
+                alt="Vista previa de la página a visitar"
+                title="Vista previa de la página a visitar"
+              />
+              <div class="card-body p-1">
+                <h5 class="card-title m-0 text-center">
+                  Página de documentación
+                </h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-8">
+            <a
+              href="https://srpache.github.io/amarantoverduras/"
+              class="card text-decoration-none text-reset"
+              target="_blank"
+            >
+              <img
+                src="public/media/img/portfolio/09-amaranto.jpg"
+                class="card-img-top"
+                width="300px"
+                height="200px"
+                alt="Vista previa de la página a visitar"
+                title="Vista previa de la página a visitar"
+              />
+              <div class="card-body p-1">
+                <h5 class="card-title m-0 text-center">Tienda de Amaranto</h5>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <div class="container-fluid">
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <p class="col-md-4 mb-0 text-muted">© 2021 Todos los derechos reservados</p>
-            
-                <!-- <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                </a> -->
-            
-                <ul class="nav col-md-4 justify-content-end">
-                  
-                    <li class="nav-item"><a href="#about-me" class="nav-link px-2 text-muted">Sobre mí</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link px-2 text-muted">Mis proyectos</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contacto</a></li>
-                    <!-- <li class="nav-item"><a href="mailto:sr_pache@protonmail.com" class="nav-link px-2 text-muted"><i class="fas fa-envelope i-button"></i></a></li> -->
-                </ul>
-            </footer>
-        </div>
-    </div>
+    <section
+      id="contacto"
+      class="container-fluid py-5 d-flex flex-column align-content-center justify-content-between"
+      style="min-height: 80vh; background-color: #fafafa"
+    >
+      <h2 class="text-dark text-center my-4">¿Hacemos un proyecto?</h2>
+      <div
+        class="container col-md-6 my-5 d-flex justify-content-center flex-wrap gap-5 flex-grow-1 align-content-center px-3"
+      >
+        <a
+          href="https://www.facebook.com/profile.php?id=100068667195952"
+          target="_blank"
+          class="d-inline-block redes"
+          ><figure class="figure">
+            <i class="fab fa-facebook-f text-center d-block display-5" alt="Logo de Facebook"></i>
+            <figcaption class="figure-caption text-center">Facebook</figcaption>
+          </figure></a
+        >
+        <a
+          href="https://www.twitter.com/sr_pache"
+          target="_blank"
+          class="d-inline-block redes"
+          ><figure class="figure">
+            <i class="fab fa-twitter text-center d-block display-5" alt="Logo de Twitter"></i>
+            <figcaption class="figure-caption text-center">Twitter</figcaption>
+          </figure></a
+        >
+        <a
+          href="https://www.linkedin.com/in/francoivanpacheco/"
+          target="_blank"
+          class="d-inline-block redes"
+          ><figure class="figure">
+            <i class="fab fa-linkedin-in text-center d-block display-5" alt="Logo de LinkedIn"></i>
+            <figcaption class="figure-caption text-center">LinkedIn</figcaption>
+          </figure></a
+        >
+        <a
+          href="https://www.instagram.com/sr_pache/"
+          target="_blank"
+          class="d-inline-block redes"
+          ><figure class="figure">
+            <i class="fab fa-instagram text-center d-block display-5" alt="Logo de Instagram"></i>
+            <figcaption class="figure-caption text-center">
+              Instagram
+            </figcaption>
+          </figure></a
+        >
+        <a
+          href="mailto:sr_pache@protonmail.com"
+          target="_blank"
+          class="d-inline-block redes"
+          ><figure class="figure">
+            <i class="fas fa-envelope text-center d-block display-5" alt="Logo de correo electrónico"></i>
+            <figcaption class="figure-caption text-center">Email</figcaption>
+          </figure></a
+        >
+        <a
+          href="https://github.com/SrPache"
+          target="_blank"
+          class="d-inline-block redes"
+          ><figure class="figure">
+            <i class="fab fa-github text-center d-block display-5" alt="Logo de GitHub"></i>
+            <figcaption class="figure-caption text-center">Github</figcaption>
+          </figure></a
+        >
+        <a
+          href="https://www.freecodecamp.org/sr_pache"
+          target="_blank"
+          class="d-inline-block redes"
+          ><figure class="figure">
+            <i class="fab fa-free-code-camp text-center d-block display-5" alt="Logo de FreeCodeCamp.org"></i>
+            <figcaption class="figure-caption text-center">
+              FreeCodeCamp
+            </figcaption>
+          </figure></a
+        >
+      </div>
+    </section>
 
-    <script src="/js/bootstrap.bundle.min.js"></script>
-</body>
+    <section
+      id="tecnologias"
+      class="container-fluid px-4 py-5 d-flex flex-column align-content-center justify-content-between"
+      style="min-height: 80vh; background-color: #222"
+    >
+      <h2 class="text-light text-center my-4">¿Qué aprendí?</h2>
+      <ul
+        class="container col-md-6 my-5 d-flex justify-content-center flex-wrap flex-grow-1 align-content-center list-unstyled gap-5"
+      >
+        <figure class="tecnologias col text-center">
+          <i class="bi bi-filetype-html text-center text-light display-5"></i>
+          <figcaption class="text-secondary">HTML</figcaption>
+        </figure>
+        <figure class="tecnologias col text-center">
+          <i class="bi bi-filetype-css text-center text-light display-5"></i>
+          <figcaption class="text-secondary">CSS</figcaption>
+        </figure>
+        <figure class="tecnologias col text-center">
+          <i class="bi bi-filetype-js text-center text-light display-5"></i>
+          <figcaption class="text-secondary">JS</figcaption>
+        </figure>
+        <figure class="tecnologias col text-center">
+            <i class="bi bi-filetype-py text-center text-light display-5"></i>
+            <figcaption class="text-secondary">Python</figcaption>
+          </figure>
+        <figure class="tecnologias col text-center">
+            <i class="bi bi-filetype-php text-center text-light display-5"></i>
+            <figcaption class="text-secondary">PHP</figcaption>
+          </figure>
+        <figure class="tecnologias col text-center">
+          <i class="bi bi-ubuntu text-center text-light display-5"></i>
+          <figcaption class="text-secondary">Ubuntu</figcaption>
+        </figure>
+        <figure class="tecnologias col text-center">
+          <i class="bi bi-git text-center text-light display-5"></i>
+          <figcaption class="text-secondary">Git</figcaption>
+        </figure>
+        <figure class="tecnologias col text-center">
+          <i class="bi bi-github text-center text-light display-5"></i>
+          <figcaption class="text-secondary">GitHub</figcaption>
+        </figure>
+        <figure class="tecnologias col text-center">
+          <i
+            class="bi bi-universal-access-circle text-center text-light display-5"
+          ></i>
+          <figcaption class="text-secondary">Accesibilidad</figcaption>
+        </figure>
+        <figure class="tecnologias col text-center">
+          <i class="bi bi-bootstrap text-center text-light display-5"></i>
+          <figcaption class="text-secondary">Bootstrap</figcaption>
+        </figure>
+      </ul>
+    </section>
+
+    <footer
+      class="text-center text-white p-2"
+      style="background-color: #161616"
+    >
+      <div class="text-center p-2">
+        Hecho con
+        <i class="bi bi-suit-heart-fill px-1 text-danger align-middle"></i> por
+        <a class="text-white" href="https://twitter.com/sr_pache" target="_blank">Franco</a>
+      </div>
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
 </html>
